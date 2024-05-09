@@ -1,0 +1,40 @@
+python se23XX scope --param1 value1 [--param2 value2 ...] --format fff
+
+#format
+python cli_test.py searchtitle --titlepart Grand --format fff
+
+#login
+python cli_test.py login --username "Steve Koutentakis" --email stevekoutentakis@gmail.com --passw password
+
+#login no_admin
+python cli_test.py login --username "Ilias" --email liakos@hotmail.com --passw zogana
+
+#searchtitle
+python cli2_test.py searchtitle --titlepart Grand
+
+#newtitles - admin endpoint
+python cli_admin.py newtitles --filename ./title_basics_tsv_test.txt
+
+#nameID
+python cli_test_upload_function.py name --nameid nm0000035 
+
+#bygenre
+python cli_test_upload_function.py bygenre --genre drama --minrating 8.6 --yrFrom 1990 --yrTo 1991 --format csv
+
+#adduser
+python cli_test_upload_function.py adduser --username jorge --email algo@gmail.com --passw kyriakos
+
+
+#####EXECUTABLE
+
+
+.\se2352.bat login --username "Steve Koutentakis" --email stevekoutentakis@gmail.com --passw password
+
+############    WORKBENCH    ####################
+SELECT *
+FROM title_basics
+WHERE tconst = 'tt9999999';
+
+DELETE FROM title_basics
+WHERE tconst = 'tt9999999';
+

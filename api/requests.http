@@ -1,0 +1,47 @@
+POST https://localhost:9876/login/Steve Koutentakis/stevekoutentakis@gmail.com/password
+###
+
+POST https://localhost:9876/ntuaflix_api/logout
+###
+GET https://localhost:9876/ntuaflix_api/dislikes/Steve Koutentakis
+
+###
+POST https://localhost:9876/ntuaflix_api/rate/like/Steve Koutentakis/tt0000929
+
+######
+POST https://localhost:9876/ntuaflix_api/unrate/unlike/Steve Koutentakis/tt0000929
+
+
+#######
+POST https://localhost:9876/ntuaflix_api/rate/like/George Fotopoulos/tt0015414
+
+##########
+POST https://localhost:9876/ntuaflix_api/rate/dislike/George Fotopoulos/tt0000977
+
+########
+POST https://localhost:9876/ntuaflix_api/unrate/undislike/George Fotopoulos/tt0000977
+###
+POST https://localhost:9876/ntuaflix_api/filters
+
+###
+POST https://localhost:9876/ntuaflix_api/admin/resetall
+###
+POST https://localhost:9876/signup/mock/mock@gmail.com/pwdd
+###
+POST https://localhost:9876/ntuaflix_api/admin/usermod/aremovic/password
+###  
+GET https://localhost:9876/ntuaflix_api/admin/users/mock
+###
+#TEST the bad request middleware:
+GET https://localhost:9876/ntuaflix_api/fotopoulos
+
+##############
+
+GET https://localhost:9876/ntuaflix_api/likedmovies/1
+
+######
+
+GET https://localhost:9876/ntuaflix_api/dislikedmovies/1
+
+#######
+GET https://localhost:9876/ntuaflix_api/genres
