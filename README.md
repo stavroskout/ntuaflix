@@ -30,4 +30,4 @@ All we need to setup the database is the backup file " ntuaflix_backup.sql " and
 3. Exit the mysql mode using ^C
 4. Type " mysql -u YOUR_USERNAME -pYOUR_PASSWORD YOUR_PREFFERED_DB_NAME<RELATIVE_PATH/ntuaflix_backup.sql ". In a couple of seconds the database will be set.
 
-Alternatively you can use an RDBMS to import the backup sql file
+Alternatively you can use an RDBMS to import the backup .sql file
